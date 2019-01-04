@@ -28,7 +28,7 @@
   <dependency id="es6-promise-plugin" version="^4.1.0" />
 
   <js-module src="www/SocialSharing.js" name="SocialSharing">
-    <clobbers target="window.plugins.socialsharing" />
+    <clobbers target="socialsharing" />
   </js-module>
 
   <!-- ios -->

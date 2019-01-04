@@ -131,14 +131,4 @@ SocialSharing.prototype._getErrorCallback = function (ecb, functionName) {
   }
 };
 
-SocialSharing.install = function () {
-  if (!window.plugins) {
-    window.plugins = {};
-  }
-
-  window.plugins.socialsharing = new SocialSharing();
-  navigator.share = window.plugins.socialsharing.shareW3C;
-  return window.plugins.socialsharing;
-};
-
-cordova.addConstructor(SocialSharing.install);
+module.exports = new SocialSharing();
